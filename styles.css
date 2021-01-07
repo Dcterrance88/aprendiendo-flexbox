@@ -18,8 +18,18 @@ body{
   border: 3px solid black;
   padding: 5px;
 }
+/*
+Factor de expansión de los elementos flexibles: flex-growflex-grow
+
+La propiedad flex-grow hace que los elementos crezcan hasta ocupar todo el espacio disponible en la dirección principal.
+La propiedad flex-grow toma valores enteros que indican la proporción en que se reparte el espacio.
+
+Si todos los elementos toman el mismo valor, el espacio se reparte a partes iguales.
+Si hay valores distintos, el espacio se reparte de forma proporcional a esos valores
+*/
 
 .caja{
+  flex-grow: 1;
   font-size: 20px;
   font-weight: bold;
   text-align: center;
@@ -31,21 +41,20 @@ body{
 }
 
 .red{
-  order: 4;
+  flex-grow: 25;
   background-color: red;
 }
 
 .green{
-  order: 2;
+  flex-grow: 7;
   background-color: green;
 }
 
 .blue{
-  order: 1;
   background-color: blue;
 }
 
 .orange{
-  order: 3;
+  flex-grow: 7;
   background-color: orange;
 }
