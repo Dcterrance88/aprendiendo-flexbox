@@ -4,8 +4,13 @@ body{
 }
 
 #layout{
-  /*display: flex; el contenedor se comporta como un bloque, es decir, ocupa todo el espacio horizontal disponible*/
-  display: inline-flex;/*el contenedor se comporta como un elemento en-línea (ocupa sólo el espacio horizontal necesario y pueden colocarse unos detrás de otros en la misma línea)*/
+  display: flex;/*el contenedor se comporta como un bloque, es decir, ocupa todo el espacio horizontal disponible*/
+  /*display: inline-flex;el contenedor se comporta como un elemento en-línea (ocupa sólo el espacio horizontal necesario y pueden colocarse unos detrás de otros en la misma línea)*/
+  /*flex-direction: row; los elementos se colocan horizontalmente de izquierda a derecha.*/
+  /*flex-direction: column; los elementos se colocan verticalmente de arriba abajo.*/
+  /*flex-direction: row-reverse; los elementos se colocan horizontalmente de derecha a izquierda. */
+  /*flex-direction: column-reverse;los elementos se colocan verticalmente de abajo arriba. */
+  flex-direction: unset;/*no aplica ningun posicionamiento*/
   border: 3px solid black;
   padding: 5px;
 }
