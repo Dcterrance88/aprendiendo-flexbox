@@ -17,6 +17,8 @@ body{
   flex-flow: row wrap;/*La propiedad compuesta flex-flow permite establecer simultáneamente las dos propiedades flex-direction y flex-wrap.*/
   border: 3px solid black;
   padding: 5px;
+  height: 600px;
+  align-items: flex-start;
   justify-content: space-around;
 }
 /*
@@ -30,6 +32,7 @@ Si hay valores distintos, el espacio se reparte de forma proporcional a esos val
 */
 
 .caja{
+  flex-grow: 1;
   font-size: 20px;
   font-weight: bold;
   text-align: center;
@@ -41,17 +44,21 @@ Si hay valores distintos, el espacio se reparte de forma proporcional a esos val
 }
 
 .red{
+  align-self: flex-start;
   background-color: red;
 }
 
 .green{
+  margin-top: 11%;
   background-color: green;
 }
 
 .blue{
+  align-self: center;
   background-color: blue;
 }
 
 .orange{
+  align-self: flex-end;
   background-color: orange;
 }
