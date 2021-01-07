@@ -17,6 +17,7 @@ body{
   flex-flow: row wrap;/*La propiedad compuesta flex-flow permite establecer simultáneamente las dos propiedades flex-direction y flex-wrap.*/
   border: 3px solid black;
   padding: 5px;
+  justify-content: space-around;
 }
 /*
 Factor de expansión de los elementos flexibles: flex-growflex-grow
@@ -29,7 +30,6 @@ Si hay valores distintos, el espacio se reparte de forma proporcional a esos val
 */
 
 .caja{
-  flex-grow: 1;
   font-size: 20px;
   font-weight: bold;
   text-align: center;
@@ -38,7 +38,6 @@ Si hay valores distintos, el espacio se reparte de forma proporcional a esos val
   padding: 20px;
   border: 4px solid #222;
   margin: 10px;
-  flex-basis: calc((100%/3) - 68px);
 }
 
 .red{
@@ -50,12 +49,9 @@ Si hay valores distintos, el espacio se reparte de forma proporcional a esos val
 }
 
 .blue{
-
-   /*flex-shrink: 0;La propiedad flex-shrink, que toma valores enteros, indica la proporción en que se estrechan los elementos */
   background-color: blue;
 }
 
 .orange{
-  flex-basis: 100%;
   background-color: orange;
 }
