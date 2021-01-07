@@ -10,7 +10,11 @@ body{
   /*flex-direction: column; los elementos se colocan verticalmente de arriba abajo.*/
   /*flex-direction: row-reverse; los elementos se colocan horizontalmente de derecha a izquierda. */
   /*flex-direction: column-reverse;los elementos se colocan verticalmente de abajo arriba. */
-  flex-direction: unset;/*no aplica ningun posicionamiento*/
+  /*flex-direction: unset;no aplica ningun posicionamiento*/
+  /*flex-wrap: nowrap; los elementos se colocan en una sola línea.*/
+  /*lex-wrap: wrap; los elementos se colocan en varias líneas si no caben en una sola línea.*/
+  /*flex-wrap: wrap-reverse; los elementos se colocan en varias líneas si no caben en una sola línea, pero las líneas se muestran de abajo arriba*/
+  flex-flow: column-reverse; wrap; /*La propiedad compuesta flex-flow permite establecer simultáneamente las dos propiedades flex-direction y flex-wrap.*/
   border: 3px solid black;
   padding: 5px;
 }
