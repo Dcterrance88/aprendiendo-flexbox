@@ -4,6 +4,8 @@ body{
 }
 
 #layout{
+  /*display: flex; el contenedor se comporta como un bloque, es decir, ocupa todo el espacio horizontal disponible*/
+  display: inline-flex;/*el contenedor se comporta como un elemento en-línea (ocupa sólo el espacio horizontal necesario y pueden colocarse unos detrás de otros en la misma línea)*/
   border: 3px solid black;
   padding: 5px;
 }
